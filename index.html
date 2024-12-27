@@ -1,0 +1,166 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Happy Birthday, Love!
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Roboto:wght@400;700&amp;family=Pacifico&amp;family=Playfair+Display:wght@400;700&amp;family=Sacramento&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .glitter {
+            animation: glitter 1.5s infinite;
+        }
+        @keyframes glitter {
+            0% { text-shadow: 0 0 5px #fff, 0 0 10px #ff00ff, 0 0 15px #ff00ff, 0 0 20px #ff00ff, 0 0 25px #ff00ff, 0 0 30px #ff00ff, 0 0 35px #ff00ff; }
+            100% { text-shadow: 0 0 5px #fff, 0 0 10px #ff00ff, 0 0 15px #ff00ff, 0 0 20px #ff00ff, 0 0 25px #ff00ff, 0 0 30px #ff00ff, 0 0 35px #ff00ff; }
+        }
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .slide-in {
+            animation: slideIn 1s ease-in-out;
+        }
+        @keyframes slideIn {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(0); }
+        }
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #ff00ff;
+            animation: confettiFall 3s infinite;
+        }
+        @keyframes confettiFall {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(100vh); }
+        }
+        .confetti::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #ff00ff;
+            animation: confettiRotate 1s infinite;
+        }
+        @keyframes confettiRotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .confetti:nth-child(odd) {
+            background-color: #00ff00;
+        }
+        .confetti:nth-child(even) {
+            background-color: #ff0000;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-900 text-white">
+  <div class="flex items-center justify-center min-h-screen relative">
+   <img alt="A romantic photo of a couple in a beautiful scenic background" class="absolute inset-0 w-full h-full object-cover opacity-50" height="1080" src="sss.jpg" width="1920"/>
+   <div class="relative text-center fade-in">
+    <h1 class="text-5xl md:text-7xl font-sacramento glitter text-pink-400">
+     00.00 WIB <br>28 Desember 2024
+    </h1>
+    <button class="mt-8 px-6 py-3 bg-pink-600 text-white text-lg rounded-full shadow-lg hover:bg-pink-700 transition duration-300" id="playMusic">
+     Nyalain Musiknya dulu ya sayang :D
+    </button>
+   </div>
+  </div>
+  <audio id="backgroundMusic" loop="">
+   <source src="music.mp3" type="audio/mpeg"/>
+   Your browser does not support the audio element.
+  </audio>
+  <div class="hidden" id="content">
+   <div class="flex items-center justify-center min-h-screen relative">
+    <img alt="A romantic photo of a couple in a beautiful scenic background" class="absolute inset-0 w-full h-full object-cover opacity-50" height="1080" src="sss.jpg" width="1920"/>
+    <div class="relative text-center slide-in">
+     <h2 class="text-4xl md:text-6xl font-sacramento glitter text-pink-400">
+      SELAMAT ULANG TAHUN <br>
+      SAYANGKU CINTAKU MANISKU :*
+     </h2>
+     <p class="mt-4 text-lg md:text-2xl text-pink-200">
+      hehe... maaf ya sayang, aku belum bisa buat sesuatu yang lebih keren buat kamu. 
+     </p>
+    </div>
+   </div>
+   <div class="py-12 bg-gray-800">
+    <div class="container mx-auto px-4">
+     <h3 class="text-3xl md:text-5xl font-sacramento text-center mb-8 text-pink-400">
+      Kamu Aku dan Dunia
+     </h3>
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <img alt="A memorable photo of the couple at a special event" class="w-full h-full object-cover rounded-lg shadow-lg fade-in" height="300" src="1.jpg" width="300"/>
+      <img alt="A memorable photo of the couple at a special event" class="w-full h-full object-cover rounded-lg shadow-lg fade-in" height="300" src="2.jpg" width="300"/>
+      <img alt="A memorable photo of the couple at a special event" class="w-full h-full object-cover rounded-lg shadow-lg fade-in" height="300" src="3.jpg" width="300"/>
+      <img alt="A memorable photo of the couple at a special event" class="w-full h-full object-cover rounded-lg shadow-lg fade-in" height="300" src="4.jpg" width="300"/>
+      <img alt="A memorable photo of the couple at a special event" class="w-full h-full object-cover rounded-lg shadow-lg fade-in" height="300" src="5.jpg" width="300"/>
+      <img alt="A memorable photo of the couple at a special event" class="w-full h-full object-cover rounded-lg shadow-lg fade-in" height="300" src="6.jpg" width="300"/>
+     </div>
+    </div>
+   </div>
+   <div class="py-12 bg-gray-900">
+    <div class="container mx-auto px-4">
+     <h3 class="text-3xl md:text-5xl font-sacramento text-center mb-8 text-pink-400">
+      A Special Message for You
+     </h3>
+     <p class="text-lg md:text-2xl text-center mb-8 text-pink-200">
+      Dear My Love, INDAH SYAFITRI<br/>
+      Selamat Ulang Tahun, Sayang!
+Di hari spesialmu ini, aku cuma mau bilang terima kasih karena sudah jadi bagian dari hidup aku. Setiap momen bareng kamu tuh selalu terasa istimewa, kayak mimpi yang jadi kenyataan. Kamu nggak cuma jadi pacar aku, tapi juga sahabat terbaik yang selalu ada buat aku, yang selalu bikin aku semangat setiap hari. Senyuman kamu tuh bisa bikin dunia ini terasa lebih indah, dan aku bersyukur banget bisa punya kamu.
+
+Aku tahu kadang aku belum bisa ngatur waktu buat kamu sebaik yang kamu harapkan, dan aku minta maaf banget buat itu. Tapi percayalah, kamu selalu ada di hati aku, dan aku terus berusaha buat jadi lebih baik, lebih bisa ada buat kamu. Aku harap tahun ini kamu dapet kebahagiaan yang lebih besar, petualangan yang lebih seru, dan banyak banget momen indah yang bisa kita lewatin bareng. Aku janji bakal terus ada buat kamu, ngasih cinta yang nggak ada habisnya, dan berusaha jadi yang terbaik buat kamu.
+
+Selamat ulang tahun, cintaku! Aku sayang banget sama kamu, lebih dari kata-kata yang bisa aku ucapin. Semoga semua impian kamu tercapai dan kita bisa terus jalan bareng, ngelewatin segala hal, bahagia bareng, dan terus saling support dalam setiap langkah kita
+     </p>
+
+    
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="py-12 bg-gray-800">
+    <div class="container mx-auto px-4 text-center">
+     <h3 class="text-3xl md:text-5xl font-sacramento mb-8 text-pink-400">
+      Thank You for Being a Part of My Life!
+     </h3>
+     <p class="text-lg md:text-2xl text-pink-200">
+        Terima kasih telah menjadi bagian yang tak terpisahkan dalam hidupku. Kehadiranmu telah memberi warna dan makna yang luar biasa dalam setiap hari yang kita jalani bersama. Tanpa kamu, hidupku rasanya tidak lengkap. Kamu adalah seseorang yang membuat segala sesuatu terasa lebih indah, lebih bermakna, dan penuh kebahagiaan. Aku bersyukur setiap detik yang kita habiskan bersama, karena kamu adalah anugerah terbesar dalam hidupku.
+     </p>
+    </div>
+   </div>
+  </div>
+  <script>
+   document.getElementById('playMusic').addEventListener('click', function() {
+            document.getElementById('backgroundMusic').play();
+            document.getElementById('content').classList.remove('hidden');
+            this.parentElement.parentElement.classList.add('hidden');
+            createConfetti();
+        });
+
+        document.getElementById('stopMusic').addEventListener('click', function() {
+            document.getElementById('backgroundMusic').pause();
+        });
+
+        function createConfetti() {
+            for (let i = 0; i < 100; i++) {
+                let confetti = document.createElement('div');
+                confetti.classList.add('confetti');
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.animationDelay = Math.random() * 3 + 's';
+                document.body.appendChild(confetti);
+            }
+        }
+  </script>
+ </body>
+</html>
